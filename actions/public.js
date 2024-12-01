@@ -1,3 +1,5 @@
+"use server";
+
 import { unstable_cache } from "next/cache";
 
 export const get_daily_prompt = unstable_cache(

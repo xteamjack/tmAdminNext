@@ -19,6 +19,7 @@ NextJs based app for Tmap
   - Postgres SQL with Prisma ORM
   - Data Models
     - User - To store clerk user info
+      - /lib/checkUser - to add loggedIn user to db if not already added
     - Candidate
 - Routing
   - middleware.js contains routing functionality
