@@ -58,3 +58,24 @@ export async function getCandidates() {
     };
   }
 }
+
+export async function getCandidate(id) {
+  try {
+    const candidate = await db.candidate.findUnique({
+      where: {
+        id: id,
+      },
+    });
+    return {
+      success: true,
+      data: {
+        candidate: candidate,
+      },
+    };
+  } catch (error) {
+    return {
+      success: false,
+      error: error,
+    };
+  }
+}
