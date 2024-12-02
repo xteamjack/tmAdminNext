@@ -25,3 +25,8 @@ NextJs based app for Tmap
   - middleware.js contains routing functionality
   - Segregate public and signed in functionality
 - To Do: Authorization Fn
+
+# Ref
+
+- Dashboard, line graph, tailwind, rate limiting, clerk
+  - https://github.com/piyush-eon/journal-app/blob/main/app/(main)/dashboard/_components/mood-analytics.jsx
