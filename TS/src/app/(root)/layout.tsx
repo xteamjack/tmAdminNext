@@ -1,3 +1,6 @@
+import Sidebar from "@/components/common/sidebar";
+import { LoggedIn } from "@/data/loggedIn";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -5,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      Sidebar
+      <Sidebar user={LoggedIn} />
       <main>{children}</main>
     </>
   );

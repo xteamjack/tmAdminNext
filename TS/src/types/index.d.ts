@@ -14,3 +14,18 @@ declare interface ActiveJobsBoxProps {
 declare interface DoughnutChartProps {
   clients: Clients[];
 }
+
+declare interface FooterProps {
+  user: User;
+  type?: "mobile" | "desktop";
+}
+
+declare interface SiderbarProps {
+  user: User;
+}
+
+declare interface PlaidLinkProps {
+  user: User;
+  variant?: "primary" | "ghost";
+  dwollaCustomerId?: string;
+}
