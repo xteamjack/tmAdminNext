@@ -18,7 +18,7 @@ import { toast } from "sonner";
 
 const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
 
-const NewCandidatePage = () => {
+const AddNewCandidatePage = () => {
   const {
     loading: actionLoading,
     fn: actionFn,
@@ -131,4 +131,4 @@ const NewCandidatePage = () => {
   );
 };
 
-export default NewCandidatePage;
+export default AddNewCandidatePage;

@@ -1,7 +1,7 @@
 import { getCandidate } from "@/actions/candidate";
 import React from "react";
 
-const DisplayCandidatesPage = async ({ params }) => {
+const CandidateByIdPage = async ({ params }) => {
   const candidate = (await getCandidate(params.id)).data.candidate;
   console.log(candidate);
   return (
@@ -16,4 +16,4 @@ const DisplayCandidatesPage = async ({ params }) => {
   );
 };
 
-export default DisplayCandidatesPage;
+export default CandidateByIdPage;

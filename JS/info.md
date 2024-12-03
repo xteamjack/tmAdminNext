@@ -29,4 +29,16 @@ NextJs based app for Tmap
 # Ref
 
 - Dashboard, line graph, tailwind, rate limiting, clerk
+
   - https://github.com/piyush-eon/journal-app/blob/main/app/(main)/dashboard/_components/mood-analytics.jsx
+
+- Job Board, Create a company and Post a job, AWS data posting
+
+  - https://www.youtube.com/watch?v=grxNze3hjAQ&t=239s
+
+- Job Board, React, Redux, Mongo, JavaSpringboot, Mantine UI Controls, Nice features, Nice UI
+
+  - https://www.youtube.com/watch?v=tMVw8U7DmkU
+
+- Layout mobile sidebar
+  - https://www.youtube.com/watch?v=Q9Ngb7XByZM&list=PL5JH4SeiwEwzF7k1CWDhDU7vNvtTqpBvH&index=7

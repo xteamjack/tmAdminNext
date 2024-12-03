@@ -44,13 +44,15 @@ export async function getCandidates() {
         updatedAt: "desc",
       },
     });
+    console.log(candidates);
+    // return candidates;
+    // revalidatePath("/dashboard");
     return {
       success: true,
       data: {
         candidates: candidates,
       },
     };
-    candidates;
   } catch (error) {
     return {
       success: false,
