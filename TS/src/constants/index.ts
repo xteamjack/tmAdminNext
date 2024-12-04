@@ -11,12 +11,12 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/icons/transaction.svg",
-    route: "/Candidates",
+    route: "/candidates",
     label: "Candidates",
   },
   {
     imgURL: "/icons/money-send.svg",
-    route: "/Jobs",
+    route: "/jobs",
     label: "Jobs",
   },
 ];
