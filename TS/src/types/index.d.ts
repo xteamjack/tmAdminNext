@@ -29,3 +29,7 @@ declare interface PlaidLinkProps {
   variant?: "primary" | "ghost";
   dwollaCustomerId?: string;
 }
+
+declare interface MobileNavProps {
+  user: User;
+}
