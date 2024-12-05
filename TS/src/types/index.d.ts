@@ -148,3 +148,8 @@ declare type Bank = {
   userId: string;
   shareableId: string;
 };
+
+declare interface PaginationProps {
+  page: number;
+  totalPages: number;
+}
