@@ -3,6 +3,9 @@ import MetricsTotalBalanceBox from "@/components/common/metric-total-bal";
 import RecentActivity from "@/components/common/recent-activity";
 import RightSidebar from "@/components/common/right-sidebar";
 import { Clients, ClientData } from "@/data/clients";
+import { transactions } from "@/data/transactions";
+import { banks } from "@/data/banks";
+import { accounts } from "@/data/accounts";
 import { LoggedIn } from "@/data/loggedIn";
 import React from "react";
 
@@ -33,7 +36,7 @@ const HomePage = () => {
         <RecentActivity />
       </div>
 
-      <RightSidebar />
+      <RightSidebar user={loggedIn} banks={banks} transactions={transactions} />
     </section>
   );
 };
