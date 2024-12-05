@@ -33,14 +33,14 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>
-          <header>
+          {/* <header>
             <SignedOut>
               <SignInButton />
             </SignedOut>
             <SignedIn>
               <UserButton />
             </SignedIn>
-          </header>
+          </header> */}
           {children}
         </body>
       </html>
