@@ -1,12 +1,12 @@
 "use client";
 
-import { sidebarLinks } from "@/constants";
+import { sidebarLinks } from "./sidebarLinks.const";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import Footer from "./footer";
+import Footer from "./sidebar-footer";
 
 const Sidebar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
@@ -16,7 +16,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
       <nav className="flex flex-col gap-4">
         <Link href="/" className="mb-12 cursor-pointer flex items-center gap-2">
           <Image
-            src="/icons/logo.svg"
+            src="/icons/app/logo.svg"
             width={34}
             height={34}
             alt="DigiHire logo"

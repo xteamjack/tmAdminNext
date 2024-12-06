@@ -36,7 +36,7 @@ const Footer = ({ user, type = "desktop" }: FooterProps) => {
 
       <div className="footer_image" onClick={handleLogOut}>
         <SignOutButton>
-          <Image src="icons/logout.svg" fill alt="jsm" />
+          <Image src="icons/actions/logout.svg" fill alt="Application Logout" />
         </SignOutButton>
       </div>
     </footer>

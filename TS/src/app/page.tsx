@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 function App() {
@@ -13,20 +14,28 @@ function App() {
   return (
     <div className="font-sans text-gray-800">
       {/* Header */}
-      <header className="bg-gray-900 text-white py-4">
+      <header className=" text-gray-700 py-4">
         <div className="container mx-auto flex justify-between items-center px-4">
-          <h1 className="text-2xl font-bold">DigiHire</h1>
+          <div className="flex gap-2">
+            <Image
+              src="/icons/app/logo.svg"
+              width={30}
+              height={30}
+              alt="logo"
+            />
+            <h1 className="sidebar-logo">DigiHire</h1>
+          </div>
           <nav className="space-x-6">
-            <a href="#hero" className="hover:text-gray-300">
+            <a href="#hero" className="hover:text-gray-900">
               Home
             </a>
-            <a href="#clients" className="hover:text-gray-300">
+            <a href="#clients" className="hover:text-gray-900">
               Clients
             </a>
-            <a href="sign-in" className="hover:text-gray-300">
+            <a href="sign-in" className="hover:text-gray-900">
               Sign In
             </a>
-            <a href="#footer" className="hover:text-gray-300">
+            <a href="#footer" className="hover:text-gray-900">
               Contact
             </a>
           </nav>
@@ -34,15 +43,15 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="bg-blue-500 text-white py-20">
-        <div className="container mx-auto text-center px-4">
-          <h2 className="text-4xl md:text-6xl font-bold">
+      <section id="hero" className="bg-blue-500 text-gray-900 py-20">
+        <div className="container mx-auto text-center px-6">
+          <h2 className="text-4xl md:text-6xl font-bold font-ibm-plex-serif">
             Welcome to DigiHire
           </h2>
           <p className="mt-4 text-lg md:text-xl">
             Experience Transparency, Predictability, and Success in Every Hire.
           </p>
-          <button className="mt-6 px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg shadow-md hover:bg-gray-100">
+          <button className="mt-6 px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg shadow-md hover:bg-gray-300">
             <a href="/dashboard">Get Started</a>
           </button>
         </div>

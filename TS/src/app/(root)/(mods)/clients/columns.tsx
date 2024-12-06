@@ -2,6 +2,8 @@
 
 import UserBadge from "@/components/user/badge";
 import { ColumnDef } from "@tanstack/react-table";
+import Image from "next/image";
+import Link from "next/link";
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -53,5 +55,39 @@ export const columns: ColumnDef<Client>[] = [
   {
     accessorKey: "active_jobs",
     header: "Active Jobs",
+  },
+  {
+    accessorKey: "actions",
+    header: "",
+    cell: ({ row }) => {
+      return (
+        <div className="flex text-center font-medium gap-1">
+          <Link href={`/clients/${row.original.id}/view`}>
+            <Image
+              src="/icons/actions/view.svg"
+              width={20}
+              height={20}
+              alt="View"
+            />
+          </Link>
+          <Link href={`/clients/${row.original.id}/edit`}>
+            <Image
+              src="/icons/actions/edit.svg"
+              width={20}
+              height={20}
+              alt="Edit"
+            />
+          </Link>
+          <Link href="about:blank">
+            <Image
+              src="/icons/actions/delete.svg"
+              width={20}
+              height={20}
+              alt="Delete"
+            />
+          </Link>
+        </div>
+      );
+    },
   },
 ];

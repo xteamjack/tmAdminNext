@@ -8,7 +8,6 @@ const BankCard = ({
   userName,
   showBalance = true,
 }: CreditCardProps) => {
-  console.log(account);
   return (
     <div className="flex flex-col">
       <Link
@@ -35,9 +34,14 @@ const BankCard = ({
         </div>
 
         <div className="bank-card_icon">
-          <Image src="/icons/Paypass.svg" width={20} height={24} alt="pay" />
           <Image
-            src="/icons/mastercard.svg"
+            src="/icons/del/Paypass.svg"
+            width={20}
+            height={24}
+            alt="pay"
+          />
+          <Image
+            src="/icons/del/mastercard.svg"
             width={45}
             height={32}
             alt="mastercard"
@@ -46,7 +50,7 @@ const BankCard = ({
         </div>
 
         <Image
-          src="/icons/lines.png"
+          src="/icons/del/lines.png"
           width={316}
           height={190}
           alt="lines"

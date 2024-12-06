@@ -1,7 +1,7 @@
 import HeaderBox from "@/components/common/header-box";
 import MetricsTotalBalanceBox from "@/components/common/metric-total-bal";
 import RecentActivity from "@/components/common/recent-activity";
-import RightSidebar from "@/components/common/right-sidebar";
+import RightSidebar from "@/app/(root)/dashboard/_components/right-sidebar";
 import { Clients, ClientData } from "@/data/clients";
 import { transactions } from "@/data/transactions";
 import { banks } from "@/data/banks";

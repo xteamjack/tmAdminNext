@@ -1,49 +1,3 @@
-export const sidebarLinks = [
-  {
-    imgURL: "/icons/home.svg",
-    route: "/dashboard",
-    label: "Home",
-  },
-  {
-    imgURL: "/icons/dollar-circle.svg",
-    route: "/clients",
-    label: "Clients",
-  },
-  {
-    imgURL: "/icons/transaction.svg",
-    route: "/candidates",
-    label: "Candidates",
-  },
-  {
-    imgURL: "/icons/money-send.svg",
-    route: "/jobs",
-    label: "Jobs",
-  },
-];
-
-export const topbarLinks = [
-  {
-    imgURL: "/icons/home.svg",
-    route: "/",
-    label: "Home",
-  },
-  {
-    imgURL: "/icons/dollar-circle.svg",
-    route: "/clients",
-    label: "Clients",
-  },
-  {
-    imgURL: "/icons/transaction.svg",
-    route: "/Candidates",
-    label: "Candidates",
-  },
-  {
-    imgURL: "/icons/money-send.svg",
-    route: "/Jobs",
-    label: "Jobs",
-  },
-];
-
 export const topCategoryStyles = {
   Dining: {
     bg: "bg-blue-25",
@@ -56,7 +10,7 @@ export const topCategoryStyles = {
       bg: "bg-blue-100",
       indicator: "bg-blue-700",
     },
-    icon: "/icons/monitor.svg",
+    icon: "/icons/del/monitor.svg",
   },
   Transportation: {
     bg: "bg-success-25",
@@ -69,7 +23,7 @@ export const topCategoryStyles = {
       bg: "bg-success-100",
       indicator: "bg-success-700",
     },
-    icon: "/icons/stripe.svg",
+    icon: "/icons/del/stripe.svg",
   },
   Shopping: {
     bg: "bg-pink-25",
@@ -82,7 +36,7 @@ export const topCategoryStyles = {
       bg: "bg-pink-100",
       indicator: "bg-pink-700",
     },
-    icon: "/icons/shopping-bag.svg",
+    icon: "/icons/del/shopping-bag.svg",
   },
   Utilities: {
     bg: "bg-yellow-25",
@@ -95,7 +49,7 @@ export const topCategoryStyles = {
       bg: "bg-yellow-100",
       indicator: "bg-yellow-700",
     },
-    icon: "/icons/coins.svg",
+    icon: "/icons/del/coins.svg",
   },
   default: {
     bg: "bg-teal-25",
@@ -108,6 +62,6 @@ export const topCategoryStyles = {
       bg: "bg-teal-100",
       indicator: "bg-teal-700",
     },
-    icon: "/icons/bank-transfer.svg",
+    icon: "/icons/del/bank-transfer.svg",
   },
 };
