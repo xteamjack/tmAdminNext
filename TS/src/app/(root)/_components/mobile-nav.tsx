@@ -25,7 +25,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
       <Sheet>
         <SheetTrigger>
           <Image
-            src="/icons/hamburger.svg"
+            src="/icons/layout/hamburger.svg"
             width={30}
             height={30}
             alt="menu"

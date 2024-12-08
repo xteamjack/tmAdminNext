@@ -60,6 +60,7 @@ export const columns: ColumnDef<Client>[] = [
     accessorKey: "actions",
     header: "",
     cell: ({ row }) => {
+      // TODO:: Convert this table actions into a reusable component
       return (
         <div className="flex text-center font-medium gap-1">
           <Link href={`/clients/${row.original.id}/view`}>
@@ -78,16 +79,23 @@ export const columns: ColumnDef<Client>[] = [
               alt="Edit"
             />
           </Link>
-          <Link href="about:blank">
+          <div onClick={(e) => getConfirmation()}>
             <Image
               src="/icons/actions/delete.svg"
               width={20}
               height={20}
               alt="Delete"
             />
-          </Link>
+          </div>
         </div>
       );
     },
   },
 ];
+
+//TODO:: Add delete confirmation dialog box
+function getConfirmation() {
+  alert("Are you sure you want to delete this client?");
+}
+
+export default columns;

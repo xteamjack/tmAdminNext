@@ -1,7 +1,12 @@
+"use client";
+
+import { useParams } from "next/navigation";
 import React from "react";
 
-const ClientViewPage = async ({ params }) => {
-  return <div>View Client: {await params.id}</div>;
+const ClientViewPage = () => {
+  const params = useParams();
+
+  return <div>View Client: {params.id}</div>;
 };
 
 export default ClientViewPage;
