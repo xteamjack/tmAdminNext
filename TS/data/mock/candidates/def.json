@@ -1,0 +1,282 @@
+{
+  "type": "object",
+  "properties": {
+    "personalInformation": {
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string",
+          "description": "Full name of the candidate"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of birth in ISO format"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Email address"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number with country code"
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "line1": { "type": "string", "description": "Address line 1" },
+            "line2": { "type": "string", "description": "Address line 2" },
+            "city": { "type": "string", "description": "City name" },
+            "state": { "type": "string", "description": "State name" },
+            "country": { "type": "string", "description": "Country name" },
+            "postalCode": {
+              "type": "string",
+              "description": "Postal or ZIP code"
+            }
+          },
+          "required": ["line1", "city", "state", "country", "postalCode"]
+        },
+        "governmentIdentifiers": {
+          "type": "object",
+          "properties": {
+            "aadharNumber": {
+              "type": "string",
+              "description": "Aadhar number (unique identifier)"
+            },
+            "panNumber": {
+              "type": "string",
+              "description": "PAN (Permanent Account Number)"
+            },
+            "passportNumber": {
+              "type": "string",
+              "description": "Passport number"
+            }
+          },
+          "required": ["aadharNumber", "panNumber", "passportNumber"]
+        }
+      },
+      "required": [
+        "fullName",
+        "dateOfBirth",
+        "email",
+        "phone",
+        "address",
+        "governmentIdentifiers"
+      ]
+    },
+    "professionalDetails": {
+      "type": "object",
+      "properties": {
+        "currentDesignation": {
+          "type": "string",
+          "description": "Current job title"
+        },
+        "currentCompany": {
+          "type": "string",
+          "description": "Current company name"
+        },
+        "totalExperience": {
+          "type": "string",
+          "description": "Total years of experience"
+        },
+        "timeline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "period": {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Start date"
+                  },
+                  "end": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "End date"
+                  },
+                  "duration": {
+                    "type": "string",
+                    "description": "Duration in years and months"
+                  }
+                },
+                "required": ["start", "end", "duration"]
+              },
+              "designation": {
+                "type": "string",
+                "description": "Designation during this period"
+              },
+              "company": { "type": "string", "description": "Company name" },
+              "projects": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "projectName": {
+                      "type": "string",
+                      "description": "Name of the project"
+                    },
+                    "client": {
+                      "type": "string",
+                      "description": "Client's name"
+                    },
+                    "projectBrief": {
+                      "type": "string",
+                      "description": "Short description of the project"
+                    },
+                    "techStack": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "description": "Technologies used"
+                    },
+                    "teamSize": {
+                      "type": "integer",
+                      "description": "Number of team members"
+                    },
+                    "contribution": {
+                      "type": "string",
+                      "description": "Candidate's contributions to the project"
+                    },
+                    "architectureDetails": {
+                      "type": "string",
+                      "description": "Architecture and design details"
+                    }
+                  },
+                  "required": [
+                    "projectName",
+                    "client",
+                    "projectBrief",
+                    "techStack",
+                    "teamSize",
+                    "contribution"
+                  ]
+                }
+              }
+            },
+            "required": ["period", "designation", "company", "projects"]
+          }
+        }
+      },
+      "required": [
+        "currentDesignation",
+        "currentCompany",
+        "totalExperience",
+        "timeline"
+      ]
+    },
+    "skills": {
+      "type": "object",
+      "properties": {
+        "technicalSkills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill": { "type": "string", "description": "Skill name" },
+              "category": {
+                "type": "string",
+                "description": "Category (e.g., Language, Framework)"
+              },
+              "lastUsed": {
+                "type": "string",
+                "format": "date",
+                "description": "Last used year"
+              },
+              "rating": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5,
+                "description": "Skill rating (1-5)"
+              },
+              "anecdote": {
+                "type": "string",
+                "description": "Short anecdote about the skill"
+              }
+            },
+            "required": ["skill", "category", "lastUsed", "rating"]
+          }
+        }
+      },
+      "required": ["technicalSkills"]
+    },
+    "education": {
+      "type": "object",
+      "properties": {
+        "highestDegree": {
+          "type": "string",
+          "description": "Highest academic degree"
+        },
+        "university": {
+          "type": "string",
+          "description": "University or institution name"
+        },
+        "graduationYear": {
+          "type": "integer",
+          "description": "Year of graduation"
+        }
+      },
+      "required": ["highestDegree", "university", "graduationYear"]
+    },
+    "certifications": {
+      "type": "array",
+      "items": { "type": "string", "description": "Certification name" }
+    },
+    "domainKnowledge": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" },
+          "experience": {
+            "type": "string",
+            "description": "Experience in the domain"
+          },
+          "roles": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Roles played in the domain"
+          }
+        },
+        "required": ["domain", "experience", "roles"]
+      }
+    },
+    "socialMediaPresence": {
+      "type": "object",
+      "properties": {
+        "linkedIn": {
+          "type": "string",
+          "format": "url",
+          "description": "LinkedIn profile URL"
+        },
+        "github": {
+          "type": "string",
+          "format": "url",
+          "description": "GitHub profile URL"
+        },
+        "twitter": {
+          "type": "string",
+          "format": "url",
+          "description": "Twitter profile URL"
+        },
+        "personalWebsite": {
+          "type": "string",
+          "format": "url",
+          "description": "Personal website URL"
+        }
+      },
+      "required": ["linkedIn", "github"]
+    }
+  },
+  "required": [
+    "personalInformation",
+    "professionalDetails",
+    "skills",
+    "education",
+    "certifications",
+    "domainKnowledge",
+    "socialMediaPresence"
+  ]
+}
