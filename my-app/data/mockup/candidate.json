@@ -1,0 +1,173 @@
+{
+  "candidateProfile": {
+    "id": "1",
+    "code": "ChX193",
+    "personalInformation": {
+      "fullName": "John Doe",
+      "gender": "Male",
+      "summary": "John Doe is a seasoned Software Architect with over 15 years of extensive experience in designing and delivering scalable, high-performance software solutions across diverse domains, including Healthcare IT, E-commerce, and Finance Technology. He has a proven track record of leading complex projects, mentoring teams, and driving technological innovations.\nStarting his career as a Software Engineer, John gained a strong foundation in coding and system development, contributing to projects like HR portals and customer support dashboards. Over the years, he advanced to senior roles, where he excelled in optimizing e-commerce platforms and architecting cloud-based healthcare systems. Currently, as a Software Architect at Tech Innovators Inc., he spearheads the development of AI-powered analytics platforms, leveraging cutting-edge technologies like TensorFlow, Spark, and GCP.\nJohn's technical expertise spans programming languages (Java, Python, C#), frameworks (Spring Boot, Django), and modern technologies such as microservices, cloud platforms (AWS, Azure), and DevOps tools. His deep understanding of system design and architecture, coupled with his ability to optimize performance, has consistently delivered value to clients.\nIn addition to his technical acumen, John is an adept leader and mentor, recognized for his collaborative approach, problem-solving skills, and strategic thinking. His domain-specific experience includes consulting, application development, and software support, making him a versatile asset in addressing business challenges with tailored solutions.\nWith certifications in AWS, Azure, and Kubernetes, and a Master’s degree in Computer Science from IIT Delhi, John brings a blend of expertise, innovation, and leadership to the table, making him an ideal candidate for senior software architecture roles.",
+      "dateOfBirth": "1980-05-15",
+      "email": "john.doe@example.com",
+      "phone": "+91-9876543210",
+      "address": {
+        "line1": "123 Elm Street",
+        "line2": "Sector 21",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "country": "India",
+        "postalCode": "560001"
+      },
+
+      "governmentIdentifiers": {
+        "aadharNumber": "1234-5678-9101",
+        "panNumber": "ABCDE1234F",
+        "passportNumber": "Z1234567"
+      }
+    },
+    "professionalDetails": {
+      "currentDesignation": "Software Architect",
+      "currentCompany": "Tech Innovators Inc.",
+      "totalExperience": "15+ years",
+      "timeline": [
+        {
+          "period": {
+            "start": "June 2008",
+            "end": "August 2012",
+            "duration": "4 years, 2 months"
+          },
+          "designation": "Software Engineer",
+          "company": "Code Solutions Pvt. Ltd.",
+          "projects": [
+            {
+              "projectName": "Enterprise HR Portal",
+              "client": "Global HR Services",
+              "projectBrief": "Developed an enterprise-level HR management portal to streamline HR operations for large-scale organizations.",
+              "techStack": ["Java", "Spring Framework", "MySQL", "AngularJS"],
+              "teamSize": 8,
+              "contribution": "Designed backend APIs and integrated frontend components, optimized database queries for performance.",
+              "architectureDetails": "Built on a monolithic architecture with RESTful services."
+            },
+            {
+              "projectName": "Customer Support Dashboard",
+              "client": "TechCare Inc.",
+              "projectBrief": "Developed a real-time dashboard for customer support representatives.",
+              "techStack": ["C#", ".NET Framework", "SQL Server"],
+              "teamSize": 6,
+              "contribution": "Developed reporting modules and collaborated with QA for end-to-end testing.",
+              "architectureDetails": "Used layered architecture with focus on modularity."
+            }
+          ]
+        },
+        {
+          "period": {
+            "start": "September 2012",
+            "end": "March 2016",
+            "duration": "3 years, 6 months"
+          },
+          "designation": "Senior Software Engineer",
+          "company": "Future Tech Corp.",
+          "projects": [
+            {
+              "projectName": "E-commerce Platform Optimization",
+              "client": "ShopEase Ltd.",
+              "projectBrief": "Enhanced the performance of a large-scale e-commerce platform.",
+              "techStack": ["Python", "Django", "PostgreSQL", "Redis"],
+              "teamSize": 10,
+              "contribution": "Led performance tuning efforts and implemented caching strategies to reduce latency.",
+              "architectureDetails": "Migrated from monolithic to a modular structure."
+            }
+          ]
+        },
+        {
+          "period": {
+            "start": "April 2016",
+            "end": "December 2019",
+            "duration": "3 years, 8 months"
+          },
+          "designation": "Technical Lead",
+          "company": "Innovative Softwares Ltd.",
+          "projects": [
+            {
+              "projectName": "Healthcare Management System",
+              "client": "Global Health Solutions",
+              "projectBrief": "Built a cloud-based healthcare management system to digitize hospital operations.",
+              "techStack": ["Java", "Spring Boot", "ReactJS", "AWS"],
+              "teamSize": 15,
+              "contribution": "Architected microservices and mentored developers in modern frameworks.",
+              "architectureDetails": "Used microservices architecture with Kubernetes for scalability."
+            }
+          ]
+        },
+        {
+          "period": {
+            "start": "January 2020",
+            "end": "Present",
+            "duration": "4 years (ongoing)"
+          },
+          "designation": "Software Architect",
+          "company": "Tech Innovators Inc.",
+          "projects": [
+            {
+              "projectName": "AI-Powered Analytics Platform",
+              "client": "Insight AI Ltd.",
+              "projectBrief": "Developed an AI-driven analytics platform for real-time business intelligence.",
+              "techStack": ["Python", "TensorFlow", "Spark", "GCP"],
+              "teamSize": 20,
+              "contribution": "Designed the overall architecture, selected tech stack, and led design discussions.",
+              "architectureDetails": "Cloud-native design using serverless components and big data pipelines."
+            }
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "technicalSkills": [
+        {
+          "skill": "Java",
+          "category": "Language",
+          "lastUsed": "2024",
+          "rating": 5,
+          "anecdote": "Solved a critical production issue by refactoring legacy code to improve performance by 30%."
+        },
+        {
+          "skill": "Spring Boot",
+          "category": "Framework",
+          "lastUsed": "2024",
+          "rating": 5,
+          "anecdote": "Architected multiple microservices using Spring Boot, earning client recognition."
+        },
+        {
+          "skill": "AWS",
+          "category": "Cloud Platform",
+          "lastUsed": "2024",
+          "rating": 4,
+          "anecdote": "Optimized cloud costs for a project by 20% through efficient use of AWS services."
+        },
+        {
+          "skill": "Microservices",
+          "category": "Concept",
+          "lastUsed": "2024",
+          "rating": 5,
+          "anecdote": "Transitioned a legacy monolithic application to microservices, reducing deployment time by 50%."
+        }
+      ]
+    },
+    "domainKnowledge": [
+      {
+        "domain": "Healthcare IT",
+        "experience": "Designed digital solutions for hospital management and patient records.",
+        "roles": ["Consulting", "Application Development"]
+      },
+      {
+        "domain": "E-commerce",
+        "experience": "Optimized platform performance and developed scalable shopping systems.",
+        "roles": ["Application Development", "Support"]
+      },
+      {
+        "domain": "Finance Technology",
+        "experience": "Built secure payment gateways and fraud detection systems.",
+        "roles": ["Application Development"]
+      }
+    ]
+  }
+}
